@@ -14,9 +14,4 @@ routes.delete("/incidents/:id",incidentController.delete);
 routes.get("/profile",profileController.index);
 routes.post("/sessions",sessionController.create);
 
-
-routes.get('/',(req,resp)=>{
-    return resp.json({"nome":"christian","idade":"25"});
-});
-
 module.exports = routes;

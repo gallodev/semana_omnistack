@@ -13,6 +13,6 @@ module.exports = {
             resp.status(400).json({error: "No ong found with this id"});
         }
 
-        resp.json({ong});
+        resp.json(ong);
     }
 }

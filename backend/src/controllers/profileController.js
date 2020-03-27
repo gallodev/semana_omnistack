@@ -8,6 +8,6 @@ module.exports = {
             .where('ong_id',ong_id)
             .select("*");
 
-        return resp.json({incidents});
+        return resp.json(incidents);
     }    
 }

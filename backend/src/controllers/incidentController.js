@@ -12,7 +12,7 @@ module.exports = {
             ong_id
         });
 
-        return resp.json({id});
+        return resp.json(id);
     },
     async index(req,resp){
         const {page = 1} = req.query;
@@ -32,7 +32,7 @@ module.exports = {
                 "ongs.uf"
                 ]);
         resp.header("X-Total-Count",count['count(*)']);    
-        return resp.json({incidents});
+        return resp.json(incidents);
     },
     async delete(req,resp){
         const {id} = req.params;
